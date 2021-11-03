@@ -9,7 +9,7 @@
       rgba(198, 186, 167, 0.3),
       rgba(198, 186, 167, 0.3)
     ),
-    url('https://saruman64.github.io/Portfolio/img/Wave-off-Kanagawa-resize.jpg');
+    url("https://saruman64.github.io/Portfolio/img/Wave-off-Kanagawa-resize.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -24,7 +24,7 @@
       rgba(198, 186, 167, 0.93),
       rgba(198, 186, 167, 0.93)
     ),
-    url('https://saruman64.github.io/Portfolio/img/Wave-off-Kanagawa-resize.jpg');
+    url("https://saruman64.github.io/Portfolio/img/Wave-off-Kanagawa-resize.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -112,7 +112,7 @@ nav section ul li a:hover {
 }
 #inicial figure {
   box-sizing: border-box;
-  background-image: url('https://saruman64.github.io/Portfolio/img/Yete-Kanagawa.jpg');
+  background-image: url("https://saruman64.github.io/Portfolio/img/Yete-Kanagawa.jpg");
   background-size: cover;
   background-position: center;
   width: 400px;
@@ -121,7 +121,7 @@ nav section ul li a:hover {
   border: 3px solid rgba(41, 57, 83);
 }
 #inicial figure:hover {
-  background-image: url('https://saruman64.github.io/Portfolio/img/Yete.jpg');
+  background-image: url("https://saruman64.github.io/Portfolio/img/Yete.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -186,12 +186,35 @@ nav section ul li a:hover {
 /* fim index */
 /* início resumo */
 
+hr {
+  width: 50%;
+  border: 1px solid;
+  margin: auto;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+#resume > h1 {
+  margin-left: 14.5vw;
+  margin-bottom: 20px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 35px;
+  line-height: 35px;
+  color: #293953;
+}
 #resume article {
   width: 70vw;
   margin: auto;
   display: flex;
   flex-direction: column;
   color: #293953;
+}
+#resume article h1 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 25px;
+  line-height: 35px;
 }
 .resumo {
   display: flex;
@@ -212,7 +235,7 @@ nav section ul li a:hover {
 }
 
 .skill {
-  background-color:rgba(41, 57, 83, 0.9);
+  background-color: rgba(41, 57, 83, 0.9);
   color: white;
   padding: 1%;
   text-align: right;
@@ -220,11 +243,43 @@ nav section ul li a:hover {
   border-radius: 15px;
 }
 
-.html {
+.python {
   width: 80%;
 }
-
+.html {
+  width: 60%;
+}
+.css {
+  width: 60%;
+}
 .php {
+  width: 40%;
+}
+.ccpp {
+  width: 50%;
+}
+.js {
+  width: 20%;
+}
+.gimp {
+  width: 85%;
+}
+.ink {
+  width: 50%;
+}
+.davinci {
+  width: 60%;
+}
+.audacity {
+  width: 50%;
+}
+.pt {
+  width: 95%;
+}
+.sp {
+  width: 70%;
+}
+.en {
   width: 60%;
 }
 
