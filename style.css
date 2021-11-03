@@ -164,7 +164,7 @@ nav section ul li a:hover {
   width: 330px;
   text-align: justify;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 #inicial section div button {
   width: 100px;
