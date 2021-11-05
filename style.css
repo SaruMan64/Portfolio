@@ -4,6 +4,9 @@
   border: 0;
   font-family: "Roboto", sans-serif;
 }
+body {
+  width: 100%;
+}
 #index {
   background: linear-gradient(
       rgba(198, 186, 167, 0.3),
@@ -37,14 +40,14 @@
 
 .index {
   background-color: rgba(198, 186, 167, 0.7);
-  width: 100vw;
+  width: 100%;
   height: 10vh;
   display: flex;
   justify-content: space-between;
 }
 .pages {
   background-color: rgba(198, 186, 167, 0.1);
-  width: 100vw;
+  width: 100%;
   height: 10vh;
   display: flex;
   justify-content: space-between;
@@ -187,7 +190,7 @@ nav section ul li a:hover {
 /* início resumo */
 
 hr {
-  width: 50%;
+  width: 75%;
   border: 1px solid;
   margin: auto;
   margin-top: 25px;
@@ -233,58 +236,100 @@ hr {
   text-align: right;
   width: 10vw;
 }
-
-.skill {
-  background-color: rgba(41, 57, 83, 0.9);
-  color: white;
-  padding: 1%;
-  text-align: right;
-  font-size: 15px;
-  border-radius: 15px;
+.container {
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  margin-top: 20px;
 }
-
-.python {
-  width: 80%;
+ul {
+  list-style-type: none;
 }
-.html {
-  width: 60%;
+.progressbar {
+  counter-reset: step;
 }
-.css {
-  width: 60%;
+.progressbar li {
+  float: left;
+  width: 14.28%;
+  position: relative;
+  text-align: center;
 }
-.php {
-  width: 40%;
+.progressbar li:before {
+  content: counter(step);
+  counter-increment: step;
+  width: 30px;
+  height: 30px;
+  border: 2px solid rgba(41, 57, 83, 0.5);
+  display: block;
+  margin: 0 auto 10px auto;
+  border-radius: 20%;
+  line-height: 27px;
+  background: rgba(198, 186, 167, 1);
+  color: rgba(198, 186, 167, 1);
+  text-align: center;
+  font-weight: bold;
 }
-.ccpp {
-  width: 50%;
+.progressbar li:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background: rgba(41, 57, 83, 0.5);
+  top: 15px;
+  left: -50%;
+  z-index: -1;
 }
-.js {
-  width: 20%;
+.progressbar li.active:before {
+  border-color: rgba(41, 57, 83, 1);
+  background: rgba(41, 57, 83, 1);
+  color: rgba(41, 57, 83, 1);
 }
-.gimp {
-  width: 85%;
+.progressbar li.active:after {
+  background: rgba(41, 57, 83, 1);
 }
-.ink {
-  width: 50%;
-}
-.davinci {
-  width: 60%;
-}
-.audacity {
-  width: 50%;
-}
-.pt {
-  width: 95%;
-}
-.sp {
-  width: 70%;
-}
-.en {
-  width: 60%;
+.progressbar li:first-child:after {
+  content: none;
 }
 
 /* fim resumo */
 /* início projetos */
+
+#projects > h1 {
+  margin-left: 14.5vw;
+  margin-bottom: 20px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 35px;
+  line-height: 35px;
+  color: #293953;
+}
+#projects article {
+  width: 70vw;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  color: #293953;
+  margin-bottom: 20px;
+}
+#projects article h1 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 25px;
+  line-height: 35px;
+}
+#projects article section {
+  width: 30vw;
+}
+#projects article section p {
+  text-align: justify;
+}
+#projects article figure {
+  width: 30vw;
+}
+#projects article figure img {
+  width: 100%;
+  box-shadow: 1px 1px 1px 1px rgba(41, 57, 83, 0.2);
+}
 
 /* fim projetos */
 /* início contato */
@@ -387,8 +432,9 @@ hr {
 /* fim contato */
 
 footer {
+  margin-top: 5vh;
   background-color: rgba(198, 186, 167, 1);
-  width: 100vw;
+  width: 100%;
   height: 10vh;
   display: flex;
   justify-content: center;

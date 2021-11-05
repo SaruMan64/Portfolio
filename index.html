@@ -37,7 +37,7 @@
       <section>
         <ul>
           <li><a href="resumo.html">Resumo</a></li>
-          <!--<li><a href="projetos.html">Projetos</a></li>-->
+          <li><a href="projetos.html">Projetos</a></li>
           <li><a href="contato.html">Contato</a></li>
         </ul>
       </section>
@@ -55,7 +55,9 @@
           <button type="button" onclick="window.location.href='resumo.html'">
             Resumo
           </button>
-          <!--<button type="button" onclick="window.location.href='projetos.html'">Projetos</button>-->
+          <button type="button" onclick="window.location.href='projetos.html'">
+            Projetos
+          </button>
           <button type="button" onclick="window.location.href='contato.html'">
             Contato
           </button>
@@ -70,7 +72,7 @@
         </section>
         <section>
           <h1>Email</h1>
-          <p><a href="yete.abuna@gmail.com">yete.abuna@gmail.com</a></p>
+          <p><a href="mailto:yete.abuna@gmail.com">yete.abuna@gmail.com</a></p>
         </section>
         <section>
           <h1>Social</h1>
@@ -90,5 +92,16 @@
         </section>
       </section>
     </footer>
+
+    <div vw class="enabled">
+      <div vw-access-button class="active"></div>
+      <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+      </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+      new window.VLibras.Widget("https://vlibras.gov.br/app");
+    </script>
   </body>
 </html>
