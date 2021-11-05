@@ -245,9 +245,6 @@ hr {
   align-items: center;
   flex-wrap: wrap;
 }
-.level td p{
-  width: 100px;
-}
 .level td:last-child{
   min-width: 300px;
 }
