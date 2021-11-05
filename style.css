@@ -198,7 +198,7 @@ hr {
 }
 
 #resume > h1 {
-  margin-left: 14.5vw;
+  margin-left: 15vw;
   margin-bottom: 20px;
   font-style: normal;
   font-weight: normal;
@@ -222,19 +222,34 @@ hr {
 .resumo {
   display: flex;
   flex-direction: row;
-  justify-content: start;
+  justify-content: center;
+  flex-wrap: wrap;
   margin-top: 10px;
+}
+.resumo section{
+  min-width: 300px;
 }
 .resumo section:first-child {
   width: 40%;
 }
 .table tr td {
   width: 20vw;
-  padding: 10px;
 }
 .table tr td:first-child {
   text-align: right;
   width: 10vw;
+}
+.level{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.level td p{
+  width: 100px;
+}
+.level td:last-child{
+  min-width: 300px;
 }
 .container {
   width: 100%;
