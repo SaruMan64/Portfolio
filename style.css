@@ -226,7 +226,7 @@ hr {
   flex-wrap: wrap;
   margin-top: 25px;
 }
-.resumo section{
+.resumo section {
   min-width: 300px;
 }
 .resumo section:first-child {
@@ -239,13 +239,13 @@ hr {
   text-align: right;
   width: 10vw;
 }
-.level{
+.level {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
 }
-.level td:last-child{
+.level td:last-child {
   min-width: 300px;
 }
 .container {
